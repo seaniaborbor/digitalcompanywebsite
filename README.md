@@ -1,32 +1,57 @@
-# University Website - CodeIgniter 4 Project
+# TEC-Companies - Web Application
 
-## Overview
-This is a comprehensive university website built using CodeIgniter 4. The website provides an interface for administrators to manage career paths, courses, and blogs. Additionally, visitors can subscribe to newsletters, and subscribers will receive notifications whenever new content is published by the administrators.
 
-## Features
-- **Admin Panel:**
-  - Create, Read, Update, and Delete (CRUD) operations for career paths, courses, and blogs.
-- **Subscription System:**
-  - Visitors can subscribe to the newsletter.
-  - Automated email notifications to subscribers when new content is published.
-- **Responsive Design:**
-  - Optimized for both desktop and mobile devices.
 
-## Technologies Used
-- PHP (CodeIgniter 4)
-- MySQL
-- HTML, CSS, JavaScript
-- Bootstrap (for responsive design)
+## 🚀 Project Overview
 
-## Installation
-### Prerequisites
-- PHP >= 7.3
-- MySQL
-- Composer
-- A web server (e.g., Apache, Nginx)
+A complete web application for tec companies featuring:
+- Admin dashboard for content management
+- Public-facing portfolio showcase
+- Team management system
+- Client messaging system
+- Project showcase with categories
 
-### Steps
-1. **Clone the Repository:**
+## 🛠️ Technologies Used
+
+- **Backend**: CodeIgniter 4 PHP Framework
+- **Frontend**: Bootstrap 5, jQuery
+- **Database**: MySQL
+- **Authentication**: Secure session-based login
+- **Security**: CSRF protection, input validation, password hashing
+
+## ✨ Features
+
+### Admin Dashboard
+- Manage team members
+- Handle client messages
+- Add/update projects
+- View system analytics
+
+### Public Website
+- Responsive portfolio display
+- Project filtering by category
+- Contact form with validation
+- Team member showcase
+
+## 📦 Installation
+
+1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/university-website.git
-   cd university-website
+   git clone https://github.com/seaniaborbor/digitalcompanywebsite.git
+
+2. **create a database**
+- create a database called 'ktnexus' without quotes
+- run the following command in the directry where cloned the repo in step 1
+    ```bash
+   cd digitalcompanywebsite
+   php spark migrate
+   php spark serve
+
+- visite your webrowser and type http://localhost:8080
+
+3. **accessing your dashboard**
+- look in the team table and pick any team email
+- use "securepassword123" as password to login
+
+### Final words
+**Don't sell it unless you buy me a coffee**
