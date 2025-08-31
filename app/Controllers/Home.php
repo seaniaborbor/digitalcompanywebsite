@@ -30,7 +30,6 @@ class Home extends BaseController
             'team' => $this->teamModel
                 ->where('is_active', 1)
                 ->orderBy('join_date', 'DESC')
-                ->limit(3)
                 ->findAll()
         ];
 

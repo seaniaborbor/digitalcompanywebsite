@@ -56,10 +56,20 @@
                                                     <small class="text-muted">Joined: <?= date('M Y', strtotime($member['join_date'])) ?></small>
                                                 </div>
 
-                                                <h5 class="card-title"><?= esc($member['name']) ?></h5>
-                                                <h6 class="card-subtitle mb-2 text-primary"><?= esc($member['position']) ?></h6>
-                                                
-                                                <p class="card-text text-truncate"><?= esc($member['bio']) ?></p>
+                                                <div class="row">
+                                                    <div class="col-md-9">
+                                                        <h5 class="card-title"><?= esc($member['name']) ?></h5>
+                                                        <h6 class="card-subtitle mb-2 text-primary"><?= esc($member['position']) ?></h6>
+                                                        
+                                                        <p class="card-text text-truncate"><?= esc($member['bio']) ?></p>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                       
+                                                        <?php $link = base_url() . '#team' . $member['teamId']; ?>
+                                                        <img class="img-fluid" src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=<?= urlencode($link) ?>" alt="QR Code" />
+
+                                                </div>
+                                                </div>
                                             </div>
 
                                             <!-- Card Footer -->

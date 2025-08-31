@@ -187,10 +187,10 @@
         <div class="row g-4">
             <?php if (!empty($team)): ?>
                 <?php foreach ($team as $index => $member): ?>
-                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="<?= ($index + 1) * 100 ?>">
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="<?= ($index + 1) * 100 ?>" id="team<?=$member['teamId']?>">
                         <div class="team-card">
                             <?php if (!empty($member['image'])): ?>
-                                <img src="<?= base_url('public_assets/img/team/' . esc($member['image'])) ?>" alt="<?= esc($member['name']) ?>" class="team-img">
+                                <img src="<?= base_url('public_assets/img/team/' . esc($member['image'])) ?>" alt="<?= esc($member['name']) ?>" class="team-img" style="min-height:350px !important">
                             <?php else: ?>
                                 <img src="https://via.placeholder.com/400x300" alt="<?= esc($member['name']) ?>" class="team-img">
                             <?php endif; ?>

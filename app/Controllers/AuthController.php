@@ -72,6 +72,9 @@ class AuthController extends BaseController
                 $data['validation'] = $this->validator;
             }
         }
+
+        // echo password_hash("1234567890", PASSWORD_DEFAULT);
+        // exit();
         return view('public/login_page', $data);
     }
 
