@@ -29,7 +29,7 @@
                         <div class="quick-link-icon">
                             <i class="bi bi-code-square"></i>
                         </div>
-                        <h3>Custom Software</h3>
+                        <h3>Custom sSoftware</h3>
                         <p>Tailored solutions designed to streamline your business processes and improve efficiency.</p>
                         <a href="#" class="text-primary text-decoration-none fw-bold">Learn more →</a>
                     </div>
