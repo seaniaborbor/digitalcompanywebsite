@@ -1,21 +1,23 @@
-name: Deploy to cPanel
+name: Deploy CodeIgniter4 to Host
 
 on:
   push:
     branches:
-      - main
+      - main  # deploy when you push to main branch
 
 jobs:
   ftp-deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
+      - name: Checkout Repository
         uses: actions/checkout@v3
 
-      - name: Upload to cPanel via FTP
-        uses: SamKirkland/FTP-Deploy-Action@4.3.2
+      - name: Sync Files via FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4
         with:
-          server: ftpupload.net
-          username: ${{ secrets.CPANEL_FTP_USER }}
-          password: ${{ secrets.CPANEL_FTP_PASS }}
-          server-dir: /htdocs/
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./         # root of your repo
+          server-dir: /htdocs/my_app  # your custom folder
+          git-ftp-args: --insecure
