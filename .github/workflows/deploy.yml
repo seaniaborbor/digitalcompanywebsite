@@ -3,21 +3,26 @@ name: Deploy CodeIgniter4 to Host
 on:
   push:
     branches:
-      - main  # deploy when you push to main branch
+      - main  # Adjust to your default branch
 
 jobs:
   ftp-deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Sync Files via FTP
-        uses: SamKirkland/FTP-Deploy-Action@v4
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.6
         with:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: ./         # root of your repo
-          server-dir: /htdocs/my_app  # your custom folder
-          git-ftp-args: --insecure
+          local-dir: ./         # Root of your repo
+          server-dir: /htdocs/my_app  # Your custom folder
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/node_modules/**
+            .env
+            writable/
