@@ -39,7 +39,7 @@
                         <div class="quick-link-icon">
                             <i class="bi bi-globe"></i>
                         </div>
-                        <h3>Web Development</h3>
+                        <h3>Web Developments</h3>
                         <p>Modern, responsive websites that engage your audience and drive business growth.</p>
                         <a href="#" class="text-primary text-decoration-none fw-bold">Learn more →</a>
                     </div>
