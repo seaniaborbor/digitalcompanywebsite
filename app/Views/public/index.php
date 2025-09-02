@@ -7,7 +7,7 @@
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-6 hero-content" data-aos="fade-right">
-                        <h1 class="hero-title">Innovative IT Solutions for Your Business</h1>
+                        <h1 class="hero-title">Deploying from my pc test</h1>
                         <p class="hero-subtitle">We deliver cutting-edge software, websites, and database management solutions tailored to your needs since 2018.</p>
                         <div class="d-flex gap-3">
                             <a href="#contact" class="btn btn-primary btn-lg">Get Started</a>
